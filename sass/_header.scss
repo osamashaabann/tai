@@ -1,0 +1,183 @@
+// Main-head Styles
+// .cover-main{
+//     background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../img/pic-4.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     height: 80vh;
+
+// }
+// Main-head Styles
+.nav-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+header{
+    background: transparent;
+    max-width: 100vw;
+    margin: auto;
+    position: relative;
+    z-index: 1000;
+}
+
+header.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateY(-200%);
+    z-index: 10;
+    transition: all 0.2s ease-in-out;
+}
+
+
+body.scroll header.sticky{
+    transform: translateY(0%);
+}
+
+.nav-wrapper{
+    min-height: 10vh;
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    flex: 3 1 40rem;
+}
+
+nav.nav-wrapper ul{
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    flex: 1 1 40rem;
+    list-style: none;
+    font-size: 1.7rem;
+    line-height: 2.3rem;    
+}
+nav.nav-wrapper ul li {
+    padding: 1.6rem 0;
+    
+    
+}
+
+nav.nav-wrapper ul li a{
+    color: #e1e1e1;
+    text-decoration: none;
+
+    &:hover{
+    color: #fff;
+
+    }
+}
+// The dropdown menu
+.drop-menu{
+    position: relative;
+}
+
+nav.nav-wrapper .drop-menu .dropdown {
+    position: absolute;
+    top: 5.5rem;
+    left: 0;
+    min-width: 20rem;
+	background-color: #fff;
+	display: none;
+    visibility: hidden;
+    opacity: 0;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+nav.nav-wrapper .drop-menu:hover .dropdown {
+	display: flex;
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+.drop-menu .dropdown li a{
+    color: #222;
+}
+
+.drop-menu .dropdown li {
+    width: 100%;
+    padding: 1rem;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.drop-menu .dropdown li:hover {
+
+    background-color: rgb(219, 205, 123);
+}
+
+.drop-menu .dropdown li a{
+    transition: all .4s ease;
+}
+.drop-menu .dropdown li:hover a{
+    margin-left: .6rem;
+
+}
+
+//Social icon of the Header
+.social{
+    position: absolute;
+    top: 10rem;
+    z-index: 10;
+    bottom: 0;
+    width: 300px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__line{
+        width: 1px;
+        height: 195px;
+        background-color: #fff;
+        margin-bottom: 2rem;
+    }
+
+    &__links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 0;
+        color: #fff;
+        font-size: 1.2rem;
+
+        a{
+            &:hover,
+            &:active,
+            &:visited{
+                color: #fff;
+            }
+        }
+
+        &--facebook{
+            color: #fff;
+            margin-bottom: 0.7rem;
+                }
+        &--instagram{
+            color: #fff;
+        
+                }
+
+    }
+}
+
+
+
+
+
+
+

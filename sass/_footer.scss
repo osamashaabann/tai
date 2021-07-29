@@ -1,0 +1,247 @@
+// .footer-wrapper{
+//     display: flex;
+//     padding: 2rem;   
+//     width: 90%;
+//     margin: auto;
+//     min-height: 10vh;
+//     flex-wrap: wrap;
+//     align-items: center;
+//     background: green;
+// }
+
+// .footer-wrapper .footer-container{
+//     display: flex;
+//     list-style: none;
+//     justify-content: space-between;
+//     flex: 1 1 40rem;
+//     align-items: center;
+// }
+
+// h5{
+//     text-transform: uppercase;
+//     letter-spacing: 1px;
+//     font-size: 1.6rem;
+//     padding: 0.8rem 0;
+// }
+
+// .footer{
+//     height: 40vh;
+//     background: red;
+//     padding: 2rem;
+//     color: #eee;
+
+// }
+
+// // Site Map Section
+// .site-map{
+//     display: flex;
+//     justify-content: center;
+//     align-items: flex-start;
+//     flex-direction: column;
+//     text-align: left;
+//     background: chocolate;
+//     padding: 1rem;  
+    
+
+//     &__links{
+//         display: flex;
+//         justify-content: center;
+//         align-items: flex-start;
+//         flex-direction: column;
+//         background: crimson;
+//     }
+//     &__link{
+//         margin: 0.4rem 0;
+//         text-decoration: none;
+//         color: #eee;
+//         font-weight: 300;
+//     }
+// }
+
+// // Follow Us Section
+// .follow{
+//     display: flex;
+//     justify-content: center;
+//     align-items: flex-start;
+//     flex-direction: column;
+//     text-align: left;
+//     background: chocolate;
+//     padding: 1rem; 
+
+
+//     &__list{
+//         list-style: none;
+//         display: flex;
+//         justify-content: space-around;
+//         align-items: center;
+//         background: cornflowerblue;
+//         padding: 0.5rem 1.8rem;
+//     }
+// }
+
+
+
+/* Footer */
+footer{
+    background: #000;
+    color: #ddd;
+    font-size: 1.4rem;
+    padding: 1rem;
+    font-weight: 300;
+}
+.footer-wrapper {
+    max-width: 75%;
+    overflow: auto;
+    margin: 1rem auto;
+}
+.footer ul{
+    list-style: none;
+}
+
+.footer ul .location{
+    font-size: 1.6rem;
+}
+
+.footer a {
+    color: #999;
+    font-size: 1.4rem;
+    text-decoration: transparent;
+    transition: all .2s ease;
+
+
+    &:hover{
+        text-decoration: underline;
+        color: #fff;
+    }
+}
+
+.footer p {
+    margin-top: 1.5rem;
+    cursor: unset;
+}
+.footer .list-heading {
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+    cursor: unset;
+}
+
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li {
+    line-height: 2;
+}
+
+.social-list{
+    display: flex;
+    font-size: 1.6rem;
+}
+.social-list li{
+    margin: 0 1.5rem;
+}
+
+// Newsletter Section
+
+.subscribe{
+
+    &__form{
+        margin: 0;
+        min-width: 100%;
+    }
+
+    &__input{
+        display: block;
+        min-width: 100%;
+        font-size: 1.4rem;
+        background-color: rgba(#fff, 0.9);
+        padding: .8rem;
+        color: #333;
+        border: none;
+        border-bottom: 5px solid transparent;
+        outline: none;
+        transition: all .1s ease;
+  
+        &:focus{
+        border-bottom: 5px solid rgb(0, 126, 67);
+        box-shadow: 0rem  1.5rem 4rem rgba(#000, 0.2);
+        }
+  
+  
+        &::-webkit-input-placeholder{
+            color: #333;
+        }
+  
+        &:focus:invalid{
+        border-bottom: 5px solid orangered;
+  
+        }
+    }
+
+    &__label{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-left: 2rem;
+        margin-top: 0.7rem;
+        color: inherit;
+        display: block;
+        transition: all 0.3s ease;
+        color: #fff;
+    }
+
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+}
+
+.subscrib-btn{
+    
+    &,
+    &:link,
+    &:visited{
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0.8rem 2rem;
+        transition: all 0.2s;
+        font-size: 1.4rem;
+        min-width: 100%;
+  
+        //change for <button> element
+  
+        border: none;
+        cursor: pointer;
+    }
+  
+    &:hover{
+        transform: translateY(-0.1rem);
+        letter-spacing: 2.5px;
+    }
+  
+    &:active,
+    &:focus{
+        box-shadow: 0rem .5rem 1.2rem rgba(#000, 0.2);
+        outline: none;
+    }
+    
+    &--green{
+        background-color: rgb(0, 126, 67);
+        color: #fff;
+  
+  
+        &::after{
+            background-color: rgb(0, 126, 67);
+        }
+    }
+  
+    &--animated{
+        animation: moveInUp 0.4s ease-out 0.50s;
+        animation-fill-mode: backwards;
+    }
+  
+  }
